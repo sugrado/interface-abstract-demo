@@ -1,0 +1,11 @@
+package com.sugrado.business.concrete;
+
+import com.sugrado.business.abstracts.CustomerCheckService;
+import com.sugrado.entities.Customer;
+
+public class CustomerCheckManager implements CustomerCheckService {
+    @Override
+    public boolean CheckIfRealPerson(Customer customer) {
+        return true;
+    }
+}
