@@ -13,7 +13,7 @@ public class StarbucksCustomerManager extends BaseCustomerManager {
 
     @Override
     public void save(Customer customer) {
-        if (!customerCheckService.CheckIfRealPerson(customer))
+        if (!customerCheckService.checkIfRealPerson(customer))
             throw new RuntimeException("Not a valid person");
         super.save(customer);
     }

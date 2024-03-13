@@ -5,7 +5,7 @@ import com.sugrado.entities.Customer;
 
 public class CustomerCheckManager implements CustomerCheckService {
     @Override
-    public boolean CheckIfRealPerson(Customer customer) {
+    public boolean checkIfRealPerson(Customer customer) {
         return true;
     }
 }

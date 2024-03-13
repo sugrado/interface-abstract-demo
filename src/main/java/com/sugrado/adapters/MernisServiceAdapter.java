@@ -26,7 +26,7 @@ public class MernisServiceAdapter implements CustomerCheckService {
     }
 
     @Override
-    public boolean CheckIfRealPerson(Customer customer) {
+    public boolean checkIfRealPerson(Customer customer) {
         String url = mernisConfig.getProperty("host") + mernisConfig.getProperty("endpoint");
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(customer.getDateOfBirth());
